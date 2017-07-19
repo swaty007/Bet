@@ -1,0 +1,37 @@
+.jackpotPage {
+  width: 100%;
+  position: relative;
+  background: url(../img/layer_4.png) center center no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  padding:60px 0;
+
+  .image-block {
+    float:right;
+    >img {
+      width:350px;
+      height:300px;
+    }
+  }
+
+  .about-jackpot {
+    float:left;
+    width: 655px;
+    h3 {
+      color: $color-2;
+      font-family: $font-1;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+    p {
+      color: $color-2;
+      font-family: $font-1;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 25px 0;
+    }
+    a {}
+  }
+}

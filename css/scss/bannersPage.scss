@@ -1,0 +1,14 @@
+.BannersPage {
+  width: 100%;
+  background: url(../img/layer_1.png) center center no-repeat;
+  padding: 60px 100px 60px 100px;
+  background-size: cover;
+  .slide {
+    &:nth-child(2) {margin:0 30px;}
+    >img {
+      width: 360px;
+      height: 298px;
+    }
+    float:left;
+  }
+}

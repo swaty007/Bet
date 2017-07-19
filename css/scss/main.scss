@@ -1,0 +1,20 @@
+
+$color-1: #d9a32e;
+$color-2: #fefefe;
+$color-3: #201e2c;
+$font-1: 'Roboto';
+
+
+html body {
+  font-size: 16px;
+}
+
+@import "global";
+@import "navbar";
+@import "mainSlider";
+@import "bannerSlider";
+@import "bannersPage";
+@import "menuBranch";
+@import "menuGames";
+@import "jackpotPage";
+@import "footer";

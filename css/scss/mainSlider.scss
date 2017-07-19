@@ -1,0 +1,167 @@
+.mainSliderWrapper {
+  width: 100%;
+  position: relative;
+  background: url(../img/mainSlider/layer-1.png) center center no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  .mainSlider {
+    width: 100%;
+    position: relative;
+
+    height:500px;
+
+
+    ul.tp-revslider-mainul {
+      list-style: none !important;
+      position: absolute;
+      margin: 0px !important;
+      padding: 0px !important;
+      /* overflow-x: visible; */
+      /* overflow-y: visible; */
+      list-style-type: none !important;
+      background-image: none;
+      background-position: 0px 0px;
+      text-indent: 0em;
+      top: 0px;
+      left: 0px;
+
+      visibility: visible;
+      display: block;
+      overflow: hidden;
+      width: 1140px;
+      height: 100%;
+      max-height: none;
+      left: 0px;
+
+      li.tp-revslider-slidesli {
+        &.active-revslide {
+          z-index: 30 !important;
+          opacity: 1;
+          transition: 2s all;
+          visibility: visible;
+
+        }
+        position: absolute;
+        transition: 2s all;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+        visibility: hidden;
+        opacity: 0;
+
+        .player_1 {
+          //display:none;
+          position: absolute;
+          left: 87px;
+          top: 24px;
+          z-index: 5;
+        }
+        .player_2 {
+          //display:none;
+          position: absolute;
+          left: 850px;
+          top: 24px;
+          z-index: 5;
+        }
+
+        .time {
+          position: absolute;
+          left: 531px;
+          top: 70px;
+          z-index: 5;
+          p {
+            color: $color-2;
+            font-family: $font-1;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            &:last-child {
+              border-top: 2px solid $color-2;
+            }
+          }
+        }
+
+        .buttonSlider {
+          position: absolute;
+          left: 487px;
+          top: 400px;
+          z-index: 5;
+        }
+
+        .rates {
+          //display:none;
+          position: absolute;
+          left: 495px;
+          top: 301px;
+          z-index: 5;
+          border: 2px solid $color-2;
+          padding:10px;
+          a {
+            display: inline-block;
+            color: $color-1;
+            font-family: $font-1;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin:0 10px;
+            &:nth-child(2) {
+              padding: 0 15px;
+              border-left: 2px solid $color-2;
+              border-right: 2px solid $color-2;
+            }
+            span {
+              display:block;
+              color: $color-2;
+              font-family: $font-1;
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+        }
+        .team_flags {
+          //display:none;
+          position: absolute;
+          left: 420px;
+          top: 166px;
+          z-index: 5;
+
+          width: 335px;
+          .team_fl_1 {
+            float:left;
+            width:80px;
+            text-align: center;
+            img {height: 70px;transition: 1.6666s all}
+            p {
+              color: $color-2;
+              font-family: $font-1;
+              font-size: 20px;
+              font-weight: 500;}
+          }
+          .team_fl_2 {
+            float: right;
+            width:80px;
+            text-align: center;
+            img {height:70px;transition: 0.8333s all}
+            p {
+              color: $color-2;
+              font-family: $font-1;
+              font-size: 20px;
+              font-weight: 500;}
+          }
+        }
+
+
+
+      }
+
+    }
+  }
+}
+
+.rotare_1 {transition: 1.5333s all;
+  transform: rotate(360deg);}
+.rotare_2 {transition: 0.4333s all;
+  transform: scale(-1,1); }

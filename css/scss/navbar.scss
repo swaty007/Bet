@@ -1,0 +1,88 @@
+.navbar_1 {
+
+  .firstnavbar {
+    margin-bottom: 0;
+    background-color: $color-2;
+    border-color: #e7e7e7;
+    position: relative;
+    min-height: 90px;
+    .social_link {
+      a {padding: 0;margin:34px 15px;
+        &:hover {background-color: $color-1}}
+      img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    .lang_link {
+      a {padding: 0;margin:34px 15px; }
+    }
+  }
+
+
+  .logoimg {
+    display: inline-block;
+    position: absolute;
+    top:20px;
+    left:45%;
+    height: 45px;
+  }
+  .menu-nav {
+    height: 60px;
+    background-color: #e5e5e5;
+    ul {
+      text-align: center;
+      li {
+        line-height: 40px;
+        display:inline-block;
+        a {
+          color: $color-3;
+          font-family: $font-1;
+          font-size: 16px;
+          font-weight: 400;
+        }
+        img {
+          margin-right:5px;}
+      }
+    }
+  }
+  .login_nav {
+float:right;
+    margin:0;
+    margin-right: -20px;
+    list-style: none;
+    >li {
+      float:left;
+      margin: 29px 0;
+      a {display:block;}
+    }
+    .login-button {
+      width: 122px;
+      height: 30px;
+      margin: 0 20px;
+      line-height: 30px;
+    }
+    .register-button {
+      width: 122px;
+      height: 30px;
+      border-radius: 4px;
+      border: 1px solid $color-3;
+      background-color: rgba(217, 163, 46, 0);
+      text-align: center;
+      text-decoration: none;
+      line-height: 30px;
+
+      color: $color-3;
+      font-family: $font-1;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+
+}
+
+
+@media (min-width: 992px) {
+}
