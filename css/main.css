@@ -26,10 +26,12 @@ html body{font-size:16px}
 .navbar_1 .menu-nav{min-width:1170px;height:60px;background-color:#e5e5e5}
 .navbar_1 .menu-nav ul{text-align:center}
 .navbar_1 .menu-nav ul li{line-height:40px;display:inline-block}
-.navbar_1 .menu-nav ul li a{color:#201e2c;font-family:Roboto;font-size:16px;font-weight:400;padding:10px 20px}
-.navbar_1 .menu-nav ul li a:hover{text-decoration:none;background-color:inherit;color:#a3a2a7}
-.navbar_1 .menu-nav ul li a:hover>img{filter:grayscale(100%) brightness(700%)}
-.navbar_1 .menu-nav ul li img{margin-right:15px}
+.navbar_1 .menu-nav ul li a{color:#201e2c;font-family:Roboto;font-size:16px;font-weight:400;padding:10px 20px;z-index:2}
+.navbar_1 .menu-nav ul li a:hover{z-index:5;text-decoration:none;background-color:inherit;color:#fefefe;transition:.8333s all}
+.navbar_1 .menu-nav ul li a:hover>img{z-index:5;filter:grayscale(100%) brightness(1500%);transition:.8333s all}
+.navbar_1 .menu-nav ul li a:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)}
+.navbar_1 .menu-nav ul li a:before{content:'';position:absolute;z-index:-1;top:0;left:-2px;right:-2px;bottom:0;background:#d9a32e;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.2s;transition-duration:.2s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}
+.navbar_1 .menu-nav ul li img{z-index:2;margin-right:15px}
 .navbar_1 .login_nav{float:right;margin:0 -20px 0 0;list-style:none}
 .navbar_1 .login_nav>li{float:left;margin:29px 0}
 .navbar_1 .login_nav>li a{display:block}
