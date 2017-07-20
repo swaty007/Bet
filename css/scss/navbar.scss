@@ -15,36 +15,36 @@
     .social_link {
       &.facebook a{
         &:before {
-          content: url(/img/facebook.png);
+          content: url(../img/facebook.png);
         }
         &:hover:before {
-          content: url(/img/facebook3.png);
+          content: url(../img/facebook3.png);
         }
       };
       &.insta {
         margin-left:50px;}
       &.insta a{
         &:before {
-          content: url(/img/insta.png);
+          content: url(../img/insta.png);
         }
         &:hover:before {
-          content: url(/img/insta3.png);
+          content: url(../img/insta3.png);
         }
       };
       &.android a{
         &:before {
-          content: url(/img/android.png);
+          content: url(../img/android.png);
         }
         &:hover:before {
-          content: url(/img/android3.png);
+          content: url(../img/android3.png);
         }
       };
       &.twitter a{
         &:before {
-          content: url(/img/twitter.png);
+          content: url(../img/twitter.png);
         }
         &:hover:before {
-          content: url(/img/twitter3.png);
+          content: url(../img/twitter3.png);
         }
       };
       a {
