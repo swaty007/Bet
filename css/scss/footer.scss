@@ -31,34 +31,34 @@
         &.social_link {
           &.facebook a{
             &:before {
-              content: url(/img/facebook1.png);
+              content: url(../img/facebook1.png);
             }
             &:hover:before {
-              content: url(/img/facebook3.png);
+              content: url(../img/facebook3.png);
             }
           };
           &.insta a{
             &:before {
-              content: url(/img/insta1.png);
+              content: url(../img/insta1.png);
             }
             &:hover:before {
-              content: url(/img/insta3.png);
+              content: url(../img/insta3.png);
             }
           };
           &.android a{
             &:before {
-              content: url(/img/android1.png);
+              content: url(../img/android1.png);
             }
             &:hover:before {
-              content: url(/img/android3.png);
+              content: url(../img/android3.png);
             }
           };
           &.twitter a{
             &:before {
-              content: url(/img/twitter1.png);
+              content: url(../img/twitter1.png);
             }
             &:hover:before {
-              content: url(/img/twitter3.png);
+              content: url(../img/twitter3.png);
             }
           }
         }
