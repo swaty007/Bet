@@ -1,9 +1,25 @@
 .mainSliderWrapper {
   width: 100%;
+  min-width: $width1;
   position: relative;
   background: url(../img/mainSlider/layer-1.png) center center no-repeat;
   overflow: hidden;
   background-size: cover;
+  #change-slider {
+    z-index: 99;
+    position: absolute;
+    a {
+      position: absolute;
+    outline: none;
+      top: 250px;
+    &:hover {}}
+    .button1 {
+      left: -25px;
+    }
+    .button2 {
+      left: 1165px;
+    }
+  }
   .mainSlider {
     width: 100%;
     position: relative;

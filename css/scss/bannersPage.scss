@@ -3,8 +3,13 @@
   background: url(../img/layer_1.png) center center no-repeat;
   padding: 60px 100px 60px 100px;
   background-size: cover;
+  min-width: $width1;
   .slide {
     &:nth-child(2) {margin:0 30px;}
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 24px rgba(22, 20, 35, 0.7);
+    }
     >img {
       width: 360px;
       height: 298px;

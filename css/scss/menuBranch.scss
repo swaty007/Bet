@@ -1,5 +1,6 @@
 .branchWrapper {
   width: 100%;
+  min-width: $width1;
   position: relative;
   background: url(../img/layer_2.png) center center no-repeat;
   background-size: cover;
@@ -20,8 +21,8 @@
       text-align: center;
       text-decoration: none;
       position: relative;
+      &:hover {color: $color-1;}
       &:nth-child(3) {
-        color: $color-1;
         width:300px;
       }
       &:nth-child(n + 2):before {

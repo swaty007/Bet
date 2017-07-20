@@ -29,15 +29,16 @@ $('.carousel').carousel({
 
 
 // MAIN SLIDER
-
+var flag=0;
+function lock(time) {
+    flag = 1;
+    setTimeout('flag = 0',time);
+}
 var MainSlide = (function() {
     var app = {
         initialize : function (){
-            // this.slideToggle();
-            // this.clip1();
-            // this.pulsate();
-            // this.toggleblind();
-            $('.tp-revslider-slidesli.active-revslide').slideDown();
+            lock(5000);
+            $('.tp-revslider-slidesli.active-revslide').slideDown(200);
             this.fullAnimate();
         },
         fullAnimate: function () {
@@ -52,11 +53,12 @@ var MainSlide = (function() {
             $( ".active-revslide .rates" ).hide();
             $('.active-revslide .time').hide();
             $('.active-revslide .buttonSlider').hide();
+            $( ".active-revslide .rates" ).animate({'left':"show"},2000);
             $( ".active-revslide .team_flags" ).hide().animate({'top':"show"},1600,function () {
 
                 $( ".active-revslide .player_1" ).toggle('slide',500,function () {
                     $( ".active-revslide .player_2" ).toggle('drop',{ direction: "right" },500,function () {
-                        $( ".active-revslide .rates" ).toggle('clip',500,function () {
+                        $( ".active-revslide .rates" ).hide().toggle('clip',500,function () {
                             $('.active-revslide .time').toggle('drop').effect('pulsate',500,function () {
                                 $('.active-revslide .buttonSlider').effect('explode').toggle('clip');
                             });
@@ -68,43 +70,27 @@ var MainSlide = (function() {
 
 
         },
-        slideToggle: function () {
-            $( ".player_1" ).toggle('slide');
-            $( ".player_2" ).toggle('slide',{ direction: "right" },3000);
-        },
-        clip1: function () {
-            $( ".team_flags" ).hide();
-            // $( ".team_flags" ).toggle('clip');
-            $( ".team_flags" ).animate({'top':"show"},2000);
-            // $( ".team_flags" ).animate({'top':"show"},{2000});
-            $('.team_fl_1>img').addClass('rotare_1');
-            $('.team_fl_2>img').addClass('rotare_1');
-            // $( ".team_flags" ).hide();
-            // $( ".team_flags" ).toggle('clip');
-
-        },
-        pulsate: function () {
-            $( ".time" ).effect('pulsate',{times:5},500);//,3000
-        },
-        toggleblind: function () {
-            // $(".rates").toggle( "blind" );
-            $( ".rates" ).animate({'left':"show"},2000);
-        }
-    }
-
-    $('#change-slider').on('click',function () {
-        if ($('.tp-revslider-slidesli').hasClass('active-revslide')) {
-            $('.tp-revslider-slidesli').slideUp(200);
+        hide: function () {
+            $( ".active-revslide .rates" ).animate({'left':"hide"},1500);
+            $( ".active-revslide .team_flags" ).animate({'top':"hide"},1500);
+            $( ".active-revslide .player_1" ).toggle('slide',500);
+            $( ".active-revslide .player_2" ).toggle('drop',{ direction: "right" },500);
+            $('.active-revslide .time').toggle('drop',500);
+            $('.active-revslide .buttonSlider').toggle('clip');
             $('.tp-revslider-slidesli').toggleClass('active-revslide');
-
+            $('.tp-revslider-slidesli.active-revslide').slideUp(100);
+            setTimeout(function () {
+                            app.initialize();
+                        },2000)
+        }
+    };
+    $('#change-slider').on('click',function () {
+        if (flag == 0) {
+            lock(5000);
+            app.hide();
         } else {
-            ;
             console.log(3);
-        };
-
-        setTimeout(function () {
-            app.initialize();
-        },2000)
+        }
     });
     app.initialize();
 }());
