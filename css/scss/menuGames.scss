@@ -1,5 +1,6 @@
 .gamesWrapper {
   width: 100%;
+  min-width: $width1;
   position: relative;
   background: url(../img/layer_3.png) center center no-repeat;
   overflow: hidden;
@@ -27,6 +28,7 @@
         transform: scale(1.1);
         transition: .3333s all;
         z-index: 10;
+        box-shadow: 0 0 24px rgba(22, 20, 35, 0.7);
       }
       .image-block {
         width:100%;
@@ -76,30 +78,10 @@
   }
 .game-button {
   margin:50px auto;
-  text-align: center;
-  display:block;
-  outline: none;
-  background-image: linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%), radial-gradient(186% 100% at 50% 0%, rgba(255,255,255,.7) 0%, rgba(255,255,255,.5) -30%, rgba(0,0,0,0) 0%);
-  background-repeat: no-repeat;
-  background-size: 200% 100%, auto;
-  background-position: 200% 0, 0 0;
-  box-shadow: 0 0 10px rgba(22, 20, 35, 0.5);
-  text-shadow: 0 -1px rgba(0,0,0,.1);
-  width: 228px;
-  height: 40px;
-  border-radius: 4px;
-  background-color: $color-1;
-  text-decoration: none;
   &:hover {
     transition: .5s linear;
     background-position: -200% 0, 0 0;
   }
-  color: $color-2;
-  font-family: $font-1;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height:39px;
 }
 
 

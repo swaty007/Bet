@@ -1,5 +1,6 @@
 .footer {
   .footer-top {
+    min-width: $width1;
     width: 100%;
     height:70px;
     background-color: #fff;
@@ -9,6 +10,7 @@
     }
   }
   .footer-middle {
+    min-width: $width1;
     width: 100%;
     position: relative;
     background: url(../img/layer_5.png) center center no-repeat;
@@ -26,11 +28,48 @@
       }
       ul li{
         padding: 0 15px;
+        &.social_link {
+          &.facebook a{
+            &:before {
+              content: url(/img/facebook1.png);
+            }
+            &:hover:before {
+              content: url(/img/facebook3.png);
+            }
+          };
+          &.insta a{
+            &:before {
+              content: url(/img/insta1.png);
+            }
+            &:hover:before {
+              content: url(/img/insta3.png);
+            }
+          };
+          &.android a{
+            &:before {
+              content: url(/img/android1.png);
+            }
+            &:hover:before {
+              content: url(/img/android3.png);
+            }
+          };
+          &.twitter a{
+            &:before {
+              content: url(/img/twitter1.png);
+            }
+            &:hover:before {
+              content: url(/img/twitter3.png);
+            }
+          }
+        }
+
         a {
           padding:0;
-          background-color: $color-2;
-          &:hover {background-color: $color-1;}
-        }}
+          width:22px;
+          height:22px;
+          &:hover {background:0;}
+        }
+      }
       .logoimg {margin-bottom:15px;}
       p {
         color: $color-2;
@@ -51,6 +90,7 @@
     }
   }
   .footer-bottom {
+    min-width: $width1;
     width: 100%;
     height:45px;
     background-color: #fff;
