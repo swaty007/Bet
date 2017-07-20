@@ -38,10 +38,7 @@ html body{font-size:16px}
 .navbar_1 .login_nav .login-button{width:122px;height:30px;margin:0 20px;line-height:30px}
 .navbar_1 .login_nav .register-button{width:122px;height:30px;border:1px solid #201e2c;background-color:rgba(217,163,46,0);line-height:30px;color:#201e2c;font-weight:600}
 .mainSliderWrapper{width:100%;position:relative;background:url(../img/mainSlider/layer-1.png) center center no-repeat;overflow:hidden;background-size:cover}
-.mainSliderWrapper #change-slider{z-index:99;position:absolute}
-.mainSliderWrapper #change-slider a{position:absolute;outline:0;top:250px}
-.mainSliderWrapper #change-slider .button1{left:-25px}
-.mainSliderWrapper #change-slider .button2{left:1165px}
+.mainSliderWrapper #change-slider a{position:absolute;outline:0}
 .mainSliderWrapper .mainSlider{width:100%;position:relative;height:500px}
 .mainSliderWrapper .mainSlider ul.tp-revslider-mainul{list-style:none!important;position:absolute;margin:0!important;padding:0!important;background-image:none;background-position:0 0;text-indent:0;top:0;visibility:visible;display:block;overflow:hidden;width:1140px;height:100%;max-height:none;left:0}
 .mainSliderWrapper .mainSlider ul.tp-revslider-mainul li.tp-revslider-slidesli{position:absolute;transition:2s all;width:100%;height:100%;overflow:hidden;z-index:0;visibility:hidden;opacity:0}
@@ -70,7 +67,7 @@ html body{font-size:16px}
 .carousel-indicators{display:none;bottom:30px;width:70%;margin:0;left:30%}
 .carousel-indicators li{border-radius:0;width:27px;height:25px;background-color:#ececec}
 .carousel-indicators .active{background-color:#d9a32e;width:27px;height:27px}
-.BannersPage{width:100%;background:url(../img/layer_1.png) center center no-repeat;padding:60px 100px;background-size:cover}
+.BannersPage{width:100%;background:url(../img/layer_1.png) center center no-repeat;padding:60px 0;background-size:cover}
 .BannersPage .slide{float:left}
 .BannersPage .slide:nth-child(2){margin:0 30px}
 .BannersPage .slide:hover{cursor:pointer;box-shadow:0 0 24px rgba(22,20,35,.7)}
