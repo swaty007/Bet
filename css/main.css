@@ -27,7 +27,7 @@ html body{font-size:16px}
 .navbar_1 .firstnavbar .lang_link a{padding:0;margin:34px 15px}
 .navbar_1 .logoimg{display:inline-block;position:absolute;top:20px;left:45%;height:45px}
 .navbar_1 .menu-nav{min-width:1170px;height:60px;background-color:#e5e5e5}
-.navbar_1 .menu-nav ul{text-align:center}
+.navbar_1 .menu-nav ul{margin:10px 0;text-align:center}
 .navbar_1 .menu-nav ul li a{color:#201e2c;font-size:16px;font-weight:400;padding:10px 20px;z-index:2}
 .navbar_1 .menu-nav ul li a:hover{z-index:5;text-decoration:none;background-color:inherit;color:#fefefe;transition:.8333s all}
 .navbar_1 .menu-nav ul li a:hover>img{z-index:5;filter:grayscale(100%) brightness(1500%);transition:.8333s all}

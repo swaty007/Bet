@@ -64,21 +64,21 @@ $(document).ready(function () {
     var MainSlide = (function() {
         var app = {
             initialize : function (){
-                lock(5000);
+                lock(4000);
                 if ($('.tp-revslider-slidesli.active-revslide').attr('id') == 'slider_1') {
-                    $('#mainSliderWrapper').css('backgroundImage', 'url(../img/mainSlider/layer-1.jpg)');
+                    $('#mainSliderWrapper').css('backgroundImage', 'url(./img/mainSlider/layer-1.jpg)');
                     this.fullAnimate_1();
                 }else{
                     if ($('.tp-revslider-slidesli.active-revslide').attr('id') == 'slider_2') {
-                        $('#mainSliderWrapper').css('backgroundImage', 'url(../img/mainSlider/layer-2.png)');
+                        $('#mainSliderWrapper').css('backgroundImage', 'url(./img/mainSlider/layer-2.png)');
                         this.fullAnimate_2();
                     }else {
                         if ($('.tp-revslider-slidesli.active-revslide').attr('id') == 'slider_3') {
-                            $('#mainSliderWrapper').css('backgroundImage', 'url(../img/mainSlider/layer-3.jpg)');
+                            $('#mainSliderWrapper').css('backgroundImage', 'url(./img/mainSlider/layer-3.jpg)');
                             this.fullAnimate_3();
                         }else {
                             if ($('.tp-revslider-slidesli.active-revslide').attr('id') == 'slider_4') {
-                                $('#mainSliderWrapper').css('backgroundImage', 'url(../img/mainSlider/layer-4.png)');
+                                $('#mainSliderWrapper').css('backgroundImage', 'url(./img/mainSlider/layer-4.png)');
                                 this.fullAnimate_4();
                             }
                         }
@@ -379,7 +379,7 @@ $(document).ready(function () {
             $('#change-slider').removeClass('button_left');
             $('#change-slider').addClass('button_right');
             if (flag == 0) {
-                lock(5000);
+                lock(4000);
                 if ( $('.tp-revslider-slidesli.active-revslide').attr('id') == 'slider_1') {
                     app.hide_1();
                     return;
@@ -404,7 +404,7 @@ $(document).ready(function () {
             $('#change-slider').removeClass('button_right');
             $('#change-slider').addClass('button_left');
             if (flag == 0) {
-                lock(5000);
+                lock(4000);
                 if ( $('.tp-revslider-slidesli.active-revslide').attr('id') == 'slider_1') {
                     app.hide_1();
                     return;
