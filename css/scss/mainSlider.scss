@@ -55,120 +55,311 @@
           opacity: 1;
           transition: 2s all;
           visibility: visible;
-
         }
         position: absolute;
-        transition: 2s all;
+        transition: 1.3s all;
         width: 100%;
         height: 100%;
         overflow: hidden;
         z-index: 0;
         visibility: hidden;
         opacity: 0;
-
-        .player_1 {
-          //display:none;
-          position: absolute;
-          left: 87px;
-          top: 24px;
-          z-index: 5;
+//slider_1
+//        &#slider_1 {
+//          .player_1 {
+//            //display:none;
+//            position: absolute;
+//            left: 87px;
+//            top: 24px;
+//            z-index: 5;
+//          }
+//          .player_2 {
+//            //display:none;
+//            position: absolute;
+//            left: 850px;
+//            top: 24px;
+//            z-index: 5;
+//          }
+//          .time {
+//            position: absolute;
+//            left: 531px;
+//            top: 70px;
+//            z-index: 5;
+//            p {
+//              color: $color-2;
+//              font-family: $font-1;
+//              font-size: 24px;
+//              font-weight: 500;
+//              text-align: center;
+//              &:last-child {
+//                border-top: 2px solid $color-2;
+//              }
+//            }
+//          }
+//          .buttonSlider {
+//            position: absolute;
+//            left: 487px;
+//            top: 400px;
+//            z-index: 5;
+//          }
+//          .rates {
+//            //display:none;
+//            position: absolute;
+//            left: 495px;
+//            top: 301px;
+//            z-index: 5;
+//            border: 2px solid $color-2;
+//            padding:10px;
+//            a {
+//              display: inline-block;
+//              color: $color-1;
+//              font-family: $font-1;
+//              font-size: 16px;
+//              font-weight: 400;
+//              text-align: center;
+//              text-decoration: none;
+//              cursor: pointer;
+//              margin:0 10px;
+//              &:nth-child(2) {
+//                padding: 0 15px;
+//                border-left: 2px solid $color-2;
+//                border-right: 2px solid $color-2;
+//              }
+//              span {
+//                display:block;
+//                color: $color-2;
+//                font-family: $font-1;
+//                font-size: 16px;
+//                font-weight: 500;
+//              }
+//            }
+//          }
+//          .team_flags {
+//            //display:none;
+//            position: absolute;
+//            left: 420px;
+//            top: 166px;
+//            z-index: 5;
+//            width: 335px;
+//            .team_fl_1 {
+//              float:left;
+//              width:80px;
+//              text-align: center;
+//              img {height: 70px;transition: 1.6666s all}
+//              p {
+//                color: $color-2;
+//                font-family: $font-1;
+//                font-size: 20px;
+//                font-weight: 500;}
+//            }
+//            .team_fl_2 {
+//              float: right;
+//              width:80px;
+//              text-align: center;
+//              img {height:70px;transition: 0.8333s all}
+//              p {
+//                color: $color-2;
+//                font-family: $font-1;
+//                font-size: 20px;
+//                font-weight: 500;}
+//            }
+//          }
+//        }
+        &#slider_1 {
+          >img {
+            position: absolute;
+            &.img_slide1 {
+              top: 0;
+              left: 10px;
+            }
+            &.img_slide2 {
+              top: 90px;
+              right: 10px;
+            }
+            &.img_slide3 {
+              left: 218px;
+              top: 126px;
+            }
+            &.img_slide4 {
+              right: 420px;
+              top: 35px;
+            }
+            &.img_slide5 {
+              top: 312px;
+              left: 333px;
+            }
+            &.logo_slide {
+              top: 420px;
+              right: 499px;
+              width: 192px;
+            }
+          }
         }
-        .player_2 {
-          //display:none;
-          position: absolute;
-          left: 850px;
-          top: 24px;
-          z-index: 5;
-        }
-
-        .time {
-          position: absolute;
-          left: 531px;
-          top: 70px;
-          z-index: 5;
-          p {
+        &#slider_2 {
+          .slide_img1 {
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            >img {width: 378px;}
+          }
+          .slide_img2 {
+            position: absolute;
+            left: 776px;
+            top: 141px;
+            .line {
+              height: 280px;
+              position: absolute;
+              border: 2px solid #fff;
+              left: 180px;
+              bottom: 0;
+              top: -141px;
+            }
+            >img {width: 350px;}
+          }
+          .text {
+            text-align: center;
             color: $color-2;
             font-family: $font-1;
-            font-size: 24px;
-            font-weight: 500;
-            text-align: center;
-            &:last-child {
-              border-top: 2px solid $color-2;
+            font-weight: 600;
+            font-size: 53px;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px $color-3;
+            position: absolute;
+            &.text1{
+              left: 124px;
+              bottom: -53px;}
+            &.text2{
+              right: 110px;
+              bottom: 5px;}
+          }
+          .img_text {
+            position: absolute;
+            left: 370px;
+            top: 150px;
+            >img {width: 450px;}
+          }
+        }
+        &#slider_3 {
+          .slide_img1 {
+            position: absolute;
+            top: 63px;
+            left: 63px;
+          }
+          .slide_img2 {
+            position: absolute;
+            top: 40px;
+            left: 367px;
+            >img {
+              width: 200px;
+            }
+          }
+          >img {
+            position: absolute;
+            &.i10 {
+              top: 105px;
+              left: 490px;
+            }
+            &.dakikada {
+              right: 404px;
+              top: 263px;
+            }
+            &.para_cekme {
+              bottom: 83px;
+              left: 409px;
+            }
+            &.logo_slide {
+              top: 370px;
+              left: 137px;
+              width: 192px;
+            }
+          }
+          .slide_img3 {
+            position: absolute;
+            right: 224px;
+            top: 35px;
+            >img {width: 190px;}
+          }
+          .slide_img4 {
+            position: absolute;
+            right: 43px;
+            top: 30px;
+            >img {
+              height: 480px;
             }
           }
         }
-
-        .buttonSlider {
-          position: absolute;
-          left: 487px;
-          top: 400px;
-          z-index: 5;
-        }
-
-        .rates {
-          //display:none;
-          position: absolute;
-          left: 495px;
-          top: 301px;
-          z-index: 5;
-          border: 2px solid $color-2;
-          padding:10px;
-          a {
-            display: inline-block;
-            color: $color-1;
-            font-family: $font-1;
-            font-size: 16px;
-            font-weight: 400;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            margin:0 10px;
-            &:nth-child(2) {
-              padding: 0 15px;
-              border-left: 2px solid $color-2;
-              border-right: 2px solid $color-2;
+        &#slider_4 {
+          >img {
+            position:absolute;
+            &.text_img {
+              left: 370px;
+              top: 180px;
+              z-index: 2;
+              width: 400px;
             }
-            span {
-              display:block;
-              color: $color-2;
-              font-family: $font-1;
-              font-size: 16px;
-              font-weight: 500;
+            &.img_slide1{
+              top: 37px;
+              left: 169px;
+              width: 250px;
+              z-index: 1;
+            }
+            &.img_slide2{
+              bottom: 24px;
+              left: 46px;
+              z-index: 2;
+              width: 220px;
+            }
+            &.img_slide3{
+              bottom: 36px;
+              left: 0;
+              width: 80px;
+            }
+            &.img_slide4{
+              right: 18px;
+              top: 164px;
+              z-index: 1;
+              width: 200px;
+            }
+            &.img_slide5{
+              top: 123px;
+              left: 657px;
+              width: 584px;
+              z-index: 2;
+            }
+            &.img_slide6{
+                  width: 150px;
+              right: 191px;
+              top: 50px;
+            }
+            &.img_slide7{
+              bottom: 13px;
+              left: 169px;
+              z-index: 3;
+              width: 236px;
+            }
+            &.img_slide8{
+                  width: 150px;
+              top: 31px;
+              right: 91px;
+            }
+            &.img_slide9{
+                  width: 150px;
+              top: 44px;
+              left: 15px;
+            }
+            &.img_slide10{
+              left: 475px;
+              bottom: 155px;
+              z-index: 1;
+              width: 200px;
+            }
+            &.img_slide11{
+              right: 144px;
+              bottom: 50px;
+              width: 351px;
             }
           }
         }
-        .team_flags {
-          //display:none;
-          position: absolute;
-          left: 420px;
-          top: 166px;
-          z-index: 5;
-
-          width: 335px;
-          .team_fl_1 {
-            float:left;
-            width:80px;
-            text-align: center;
-            img {height: 70px;transition: 1.6666s all}
-            p {
-              color: $color-2;
-              font-family: $font-1;
-              font-size: 20px;
-              font-weight: 500;}
-          }
-          .team_fl_2 {
-            float: right;
-            width:80px;
-            text-align: center;
-            img {height:70px;transition: 0.8333s all}
-            p {
-              color: $color-2;
-              font-family: $font-1;
-              font-size: 20px;
-              font-weight: 500;}
-          }
-        }
-
 
 
       }

@@ -61,7 +61,7 @@
 
                 <ul class="login_nav">
                     <li><p>Şifremi Unuttum ?</p></li>
-                    <li><a class="login-button ow-btn" href="#">GIRIŞ</a></li>
+                    <li><a class="login-button ow-btn" id="login_modal">GIRIŞ</a></li>
                     <li><a class="register-button" href="#">ÜYE OL</a></li>
 
                 </ul>
@@ -92,7 +92,7 @@
 
 
 
-    <div class="mainSliderWrapper">
+    <div class="mainSliderWrapper" id="mainSliderWrapper">
         <div class="content">
             <div id="change-slider">
                 <a class="left carousel-control button1"  role="button" data-slide="prev">
@@ -109,86 +109,104 @@
             <div class="mainSlider">
 
                 <ul class="tp-revslider-mainul">
+                    <!--<li class="tp-revslider-slidesli active-revslide" id="slider_1">-->
+                        <!--<div class="player_1" >-->
+                                <!--<img alt="" src="img/mainSlider/milan_1.png" >-->
+                        <!--</div>-->
+                        <!--<div class="player_2" >-->
+                            <!--<img alt="" src="img/mainSlider/borussia_1.png" >-->
+                        <!--</div>-->
+
+                        <!--<div class="time" >-->
+                            <!--<p>18.07.2017</p>-->
+                            <!--<p>22:00</p>-->
+                        <!--</div>-->
+                        <!--<div class="buttonSlider" >-->
+                            <!--<a class="ow-btn">-->
+                                <!--HEMEN OYNA!-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<div class="rates" >-->
+                            <!--<a>1<span class="team1">1.98</span></a>-->
+                            <!--<a>2<span class="draw">3.27</span></a>-->
+                            <!--<a>3<span class="team2">2.67</span></a>-->
+                        <!--</div>-->
+                        <!--<div class="team_flags" >-->
+                            <!--<div class="team_fl_1">-->
+                                <!--<img alt="" src="img/mainSlider/milan.png">-->
+                                <!--<p>AC Milan</p>-->
+                            <!--</div>-->
+                            <!--<div class="team_fl_2">-->
+                                <!--<img alt="" src="img/mainSlider/borussia.png">-->
+                                <!--<p>Borussia-->
+                                    <!--Dortmunt</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>-->
                     <li class="tp-revslider-slidesli active-revslide" id="slider_1">
-
-                        <div class="player_1" >
-                                <img alt="" src="img/mainSlider/milan_1.png" >
-                        </div>
-                        <div class="player_2" >
-                            <img alt="" src="img/mainSlider/borussia_1.png" >
-                        </div>
-
-                        <div class="time" >
-                            <p>18.07.2017</p>
-                            <p>22:00</p>
-                        </div>
-
-
-
-                        <div class="buttonSlider" >
-                            <a class="ow-btn">
-                                HEMEN OYNA!
-                            </a>
-                        </div>
-
-                        <div class="rates" >
-                            <a>1<span class="team1">1.98</span></a>
-                            <a>2<span class="draw">3.27</span></a>
-                            <a>3<span class="team2">2.67</span></a>
-                        </div>
-
-                        <div class="team_flags" >
-                            <div class="team_fl_1">
-                                <img alt="" src="img/mainSlider/milan.png">
-                                <p>AC Milan</p>
-                            </div>
-                            <div class="team_fl_2">
-                                <img alt="" src="img/mainSlider/borussia.png">
-                                <p>Borussia
-                                    Dortmunt</p>
-                            </div>
-                        </div>
+                        <img class="img_slide1" alt="" src="img/mainSlider/KADIN.png">
+                        <img class="img_slide2" alt="" src="img/mainSlider/PARA.png">
+                        <img class="img_slide3" alt="" src="img/mainSlider/100000.png">
+                        <img class="img_slide4" alt="" src="img/mainSlider/cok_yakinda.png">
+                        <img class="img_slide5" alt="" src="img/mainSlider/PARA_PDULU.png">
+                        <img class="logo_slide" alt="" src="img/logo_1.png">
                     </li>
+
 
                     <li class="tp-revslider-slidesli" id="slider_2">
 
-                        <div class="player_2" >
-                            <img alt="" src="img/mainSlider/milan_1.png" >
-                        </div>
-                        <div class="player_1" >
-                            <img alt="" src="img/mainSlider/borussia_1.png" >
-                        </div>
-
-                        <div class="time" >
-                            <p>18.07.2017</p>
-                            <p>22:00</p>
+                        <div class="slide_img1">
+                            <img alt="" src="img/mainSlider/Trees.png">
+                            <p class="text text1">250 TL</p>
                         </div>
 
 
-
-                        <div class="buttonSlider" >
-                            <a class="ow-btn">
-                                HEMEN OYNA!
-                            </a>
+                        <div class="slide_img2">
+                            <div class="line"></div>
+                            <img alt="" src="img/mainSlider/Gift.png">
+                            <p class="text text2">25%</p>
                         </div>
 
-                        <div class="rates" >
-                            <a>1<span class="team1">1.98</span></a>
-                            <a>2<span class="draw">3.27</span></a>
-                            <a>3<span class="team2">2.67</span></a>
+                        <div class="img_text">
+                            <img alt="" src="img/mainSlider/text_2.png">
+                        </div>
+                    </li>
+
+                    <li class="tp-revslider-slidesli" id="slider_3">
+                        <div class="slide_img1">
+                            <img alt="" src="img/mainSlider/balya_para.png">
+                        </div>
+                        <div class="slide_img2">
+
+                            <img alt="" src="img/mainSlider/hızlı_cekim.png">
                         </div>
 
-                        <div class="team_flags" >
-                            <div class="team_fl_2">
-                                <img alt="" src="img/mainSlider/milan.png">
-                                <p>AC Milan</p>
-                            </div>
-                            <div class="team_fl_1">
-                                <img alt="" src="img/mainSlider/borussia.png">
-                                <p>Borussia
-                                    Dortmunt</p>
-                            </div>
+                            <img class="i10" alt="" src="img/mainSlider/10.png">
+                            <img class="dakikada" alt="" src="img/mainSlider/dakikada.png">
+                            <img class="para_cekme" alt="" src="img/mainSlider/para_cekme.png">
+                            <img class="logo_slide" alt="" src="img/logo_1.png">
+
+                        <div class="slide_img3">
+                            <img alt="" src="img/mainSlider/flying_dolars.png">
                         </div>
+                        <div class="slide_img4">
+                            <img alt="" src="img/mainSlider/hatun.png">
+                        </div>
+                    </li>
+
+                    <li class="tp-revslider-slidesli" id="slider_4">
+                        <img class="text_img" alt="" src="img/mainSlider/text-4.png">
+                        <img class="img_slide1" alt="" src="img/mainSlider/p1.png">
+                        <img class="img_slide2" alt="" src="img/mainSlider/p2.png">
+                        <img class="img_slide3" alt="" src="img/mainSlider/p3.png">
+                        <img class="img_slide4" alt="" src="img/mainSlider/p4.png">
+                        <img class="img_slide5" alt="" src="img/mainSlider/p5.png">
+                        <img class="img_slide6" alt="" src="img/mainSlider/p6.png">
+                        <img class="img_slide7" alt="" src="img/mainSlider/p7.png">
+                        <img class="img_slide8" alt="" src="img/mainSlider/p8.png">
+                        <img class="img_slide9" alt="" src="img/mainSlider/p9.png">
+                        <img class="img_slide10" alt="" src="img/mainSlider/p10.png">
+                        <img class="img_slide11" alt="" src="img/mainSlider/p11.png">
                     </li>
                 </ul>
 
@@ -214,7 +232,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/carousel/Slider_1.png" data-color="firebrick" alt="Second Image">
+                <img src="img/carousel/Slider_2.jpg" data-color="firebrick" alt="Second Image">
                 <div class="carousel-caption">
 
                 </div>
@@ -417,7 +435,22 @@
 
 
 
+<div id="modal_form"><!-- Сaмo oкнo -->
+    <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
 
+
+<ul class="modal_login_table">
+    <li><input class="FormInput" type="text" id="loginUsername" name="username" placeholder="Kullanıcı adı" maxlength="200" autocomplete="false"></li>
+    <li><input class="FormInput" type="password" id="loginPassword" name="password" placeholder="Parola" maxlength="200" autocomplete="false"></li>
+    <li><a class="login-button ow-btn" id="login">GIRIŞ</a></li>
+    <li><a class="forgot_password" href="#">Şifremi Unuttum ?</a></li>
+    <li><a class="register-button" href="#">ÜYE OL</a></li>
+</ul>
+
+
+
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
 
 
 
