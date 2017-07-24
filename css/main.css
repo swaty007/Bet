@@ -12,18 +12,9 @@ html body{font-size:16px}
 .navbar_1 .navbar-nav{float:left;margin:0}
 .navbar_1 .navbar-nav>li{float:left}
 .navbar_1 .firstnavbar{margin-bottom:0;background-color:#fefefe;border-color:#e7e7e7;position:relative;min-height:90px}
-.navbar_1 .firstnavbar .social_link.facebook a:before{content:url(../img/facebook.png)}
-.navbar_1 .firstnavbar .social_link.facebook a:hover:before{content:url(../img/facebook3.png)}
-.navbar_1 .firstnavbar .social_link.insta{margin-left:50px}
-.navbar_1 .firstnavbar .social_link.insta a:before{content:url(../img/insta.png)}
-.navbar_1 .firstnavbar .social_link.insta a:hover:before{content:url(../img/insta3.png)}
-.navbar_1 .firstnavbar .social_link.android a:before{content:url(../img/android.png)}
-.navbar_1 .firstnavbar .social_link.android a:hover:before{content:url(../img/android3.png)}
-.navbar_1 .firstnavbar .social_link.twitter a:before{content:url(../img/twitter.png)}
-.navbar_1 .firstnavbar .social_link.twitter a:hover:before{content:url(../img/twitter3.png)}
 .navbar_1 .firstnavbar .social_link a{width:22px;height:22px;padding:0;margin:34px 15px}
-.navbar_1 .firstnavbar .social_link a:hover{background:0}
-.navbar_1 .firstnavbar .social_link img{width:22px;height:22px}
+.navbar_1 .firstnavbar .social_link a img{width:22px;height:22px}
+.navbar_1 .firstnavbar .social_link a:hover{background:0;box-shadow:0 0 24px rgba(22,20,35,.7),inset 0 0 5px 0 rgba(22,20,35,.7)}
 .navbar_1 .firstnavbar .lang_link a{padding:0;margin:34px 15px}
 .navbar_1 .logoimg{display:inline-block;position:absolute;top:20px;left:45%;height:45px}
 .navbar_1 .menu-nav{min-width:1170px;height:60px;background-color:#e5e5e5}
@@ -123,7 +114,7 @@ html body{font-size:16px}
 .gamesWrapper .game-button:hover{transition:.5s linear;background-position:-200% 0,0 0}
 .jackpotPage{width:100%;background:url(../img/layer_4.png) center center no-repeat;background-size:cover;padding:60px 0}
 .jackpotPage .image-block{float:right}
-.jackpotPage .image-block>img{width:350px;height:300px}
+.jackpotPage .image-block>img{width:396px;height:308px}
 .footer .footer-top,.footer .footer-top img{height:70px;width:100%}
 .jackpotPage .about-jackpot{float:left;width:655px}
 .jackpotPage .about-jackpot h3{color:#fefefe;font-family:Roboto,sans-serif;font-size:30px;font-weight:700;text-transform:uppercase;margin-top:50px}
@@ -135,16 +126,9 @@ html body{font-size:16px}
 .footer .footer-middle .column-footer:nth-child(n+3):before{content:url(../img/line_2.png);position:absolute;left:-50px;top:10px}
 #modal_form,#overlay{position:fixed;display:none}
 .footer .footer-middle .column-footer ul li{padding:0 15px}
-.footer .footer-middle .column-footer ul li.social_link.facebook a:before{content:url(../img/facebook1.png)}
-.footer .footer-middle .column-footer ul li.social_link.facebook a:hover:before{content:url(../img/facebook3.png)}
-.footer .footer-middle .column-footer ul li.social_link.insta a:before{content:url(../img/insta1.png)}
-.footer .footer-middle .column-footer ul li.social_link.insta a:hover:before{content:url(../img/insta3.png)}
-.footer .footer-middle .column-footer ul li.social_link.android a:before{content:url(../img/android1.png)}
-.footer .footer-middle .column-footer ul li.social_link.android a:hover:before{content:url(../img/android3.png)}
-.footer .footer-middle .column-footer ul li.social_link.twitter a:before{content:url(../img/twitter1.png)}
-.footer .footer-middle .column-footer ul li.social_link.twitter a:hover:before{content:url(../img/twitter3.png)}
 .footer .footer-middle .column-footer ul li a{padding:0;width:22px;height:22px}
-.footer .footer-middle .column-footer ul li a:hover{background:0}
+.footer .footer-middle .column-footer ul li a img{width:22px;height:22px}
+.footer .footer-middle .column-footer ul li a:hover{background-color:#fefefe}
 .footer .footer-middle .column-footer .logoimg{margin-bottom:15px}
 .footer .footer-middle .column-footer>a{line-height:24px;text-decoration:none;cursor:pointer}
 .footer .footer-middle .column-footer>a:hover{color:#d9a32e}

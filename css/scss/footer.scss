@@ -28,46 +28,51 @@
       }
       ul li{
         padding: 0 15px;
-        &.social_link {
-          &.facebook a{
-            &:before {
-              content: url(../img/facebook1.png);
-            }
-            &:hover:before {
-              content: url(../img/facebook3.png);
-            }
-          };
-          &.insta a{
-            &:before {
-              content: url(../img/insta1.png);
-            }
-            &:hover:before {
-              content: url(../img/insta3.png);
-            }
-          };
-          &.android a{
-            &:before {
-              content: url(../img/android1.png);
-            }
-            &:hover:before {
-              content: url(../img/android3.png);
-            }
-          };
-          &.twitter a{
-            &:before {
-              content: url(../img/twitter1.png);
-            }
-            &:hover:before {
-              content: url(../img/twitter3.png);
-            }
-          }
-        }
+        //&.social_link {
+        //  &.facebook a{
+        //    &:before {
+        //      content: url(../img/facebook1.png);
+        //    }
+        //    &:hover:before {
+        //      content: url(../img/facebook3.png);
+        //    }
+        //  };
+        //  &.insta a{
+        //    &:before {
+        //      content: url(../img/insta1.png);
+        //    }
+        //    &:hover:before {
+        //      content: url(../img/insta3.png);
+        //    }
+        //  };
+        //  &.android a{
+        //    &:before {
+        //      content: url(../img/android1.png);
+        //    }
+        //    &:hover:before {
+        //      content: url(../img/android3.png);
+        //    }
+        //  };
+        //  &.twitter a{
+        //    &:before {
+        //      content: url(../img/twitter1.png);
+        //    }
+        //    &:hover:before {
+        //      content: url(../img/twitter3.png);
+        //    }
+        //  }
+        //}
 
         a {
           padding:0;
           width:22px;
           height:22px;
-          &:hover {background:0;}
+          img {
+            width: 22px;
+            height: 22px;
+          }
+          &:hover {
+            background-color: $color-2;}
         }
       }
       .logoimg {margin-bottom:15px;}

@@ -13,53 +13,55 @@
     position: relative;
     min-height: 90px;
     .social_link {
-      &.facebook a{
-        &:before {
-          content: url(../img/facebook.png);
-        }
-        &:hover:before {
-          content: url(../img/facebook3.png);
-        }
-      };
-      &.insta {
-        margin-left:50px;}
-      &.insta a{
-        &:before {
-          content: url(../img/insta.png);
-        }
-        &:hover:before {
-          content: url(../img/insta3.png);
-        }
-      };
-      &.android a{
-        &:before {
-          content: url(../img/android.png);
-        }
-        &:hover:before {
-          content: url(../img/android3.png);
-        }
-      };
-      &.twitter a{
-        &:before {
-          content: url(../img/twitter.png);
-        }
-        &:hover:before {
-          content: url(../img/twitter3.png);
-        }
-      };
+      //&.facebook a{
+      //  &:before {
+      //    content: url(../img/facebook.png);
+      //  }
+      //  &:hover:before {
+      //    content: url(../img/facebook3.png);
+      //  }
+      //};
+      //&.insta {
+      //  margin-left:50px;}
+      //&.insta a{
+      //  &:before {
+      //    content: url(../img/insta.png);
+      //  }
+      //  &:hover:before {
+      //    content: url(../img/insta3.png);
+      //  }
+      //};
+      //&.android a{
+      //  &:before {
+      //    content: url(../img/android.png);
+      //  }
+      //  &:hover:before {
+      //    content: url(../img/android3.png);
+      //  }
+      //};
+      //&.twitter a{
+      //  &:before {
+      //    content: url(../img/twitter.png);
+      //  }
+      //  &:hover:before {
+      //    content: url(../img/twitter3.png);
+      //  }
+      //};
       a {
         width:22px;
         height:22px;
         padding: 0;
         margin:34px 15px;
+        img {
+          width: 22px;
+          height: 22px;
+        }
         &:hover {
           background:0;
+          box-shadow:0 0 24px rgba(22,20,35,.7),inset 0 0 5px 0px rgba(22,20,35,.7);
         }
       }
-      img {
-        width: 22px;
-        height: 22px;
-      }
+
     }
     .lang_link {
       a {padding: 0;margin:34px 15px; }
